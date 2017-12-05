@@ -1,0 +1,25 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+
+			<form role="form" ng-submit="vm.createVehiculo()">
+				<legend>Registre su vehiculo</legend>
+			
+				<div class="form-group">
+					<label for="">Placa</label>
+					<input type="text" class="form-control" ng-model="vm.carros.placa" placeholder="Digite la placa del vehiculo">
+				</div>
+
+				<div class="form-group">
+					<label for="">Hora</label>
+					<input type="text" class="form-control" ng-model="vm.carros.horaLlegada" placeholder="Digite la hora de ingreso">
+				</div>			
+				
+			
+				<button type="submit" ng-click="vm.createVehiculo()" class="btn btn-primary">Ingresar</button>
+			</form>
+
+		</div>
+	</div>
+</div>
+
