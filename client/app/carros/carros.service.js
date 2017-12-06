@@ -1,10 +1,10 @@
 'use strict';
 function carrosService($resource,API) {
-	return $resource(API + '/api/carros/',{
+	return $resource(API + '/api/carros/:id',{
 		id:'@id'
 	},{
 		update:{
-			method:'POST'
+			method:'PUT'
 		}
 	});
 }

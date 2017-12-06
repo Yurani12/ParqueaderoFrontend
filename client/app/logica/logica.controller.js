@@ -3,13 +3,12 @@
 
 class LogicaComponent {
   constructor() {
-  	
-   this.carros = [{plata:'ABC123',horaLLegada:7},{plata:'HGS354',horaLLegada:8}];
-   
+  	this.sancocho = ["Hola", "Mundo"];
+  	console.log(this.sancocho.concat["a todos"]);
   }
- 	$onInit(){
- 		console.log(this.usuarios);
- 	}
+ 	//input(){
+ 	//	console.log(this.placa);
+ 	//}
 }
 
 angular.module('parqueaderoFrontendApp')

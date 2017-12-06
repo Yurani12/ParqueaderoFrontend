@@ -8,7 +8,7 @@ angular.module('parqueaderoFrontendApp',
     'ui.router', 
     'ui.bootstrap'
   ])
-.constant("API","http://localhost:8080/ProyectoParqueadero")
+.constant("API","http://localhost:8080/ParqueaderoAutos")
   .config(function($urlRouterProvider, $locationProvider) {
     $urlRouterProvider.otherwise('/');
 

@@ -4,17 +4,16 @@
 class CarrosCreateComponent {
   constructor(carrosService) {
     this.carrosService = carrosService;
-    console.log('si');
   }
 
   createVehiculo(){
-  	console.log('si 1');
   	this.carrosService.save(this.carros).$promise
   	.then(response => {
-  		console.log('Vehiculo creado', response);
+  		console.log('Vehiculo ingresado correctamente', response);
+      this.carros = response;
   	})
   	.catch(err => {
-  		console.log('error', err);
+  		console.log('error al ingresar Vehiculo', err);
   	})
   }
 }
