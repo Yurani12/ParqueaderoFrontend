@@ -2,8 +2,20 @@
 (function(){
 
 class CarrosCreateComponent {
-  constructor(carrosService) {
+  constructor(carrosService, puestoService) {
     this.carrosService = carrosService;
+    this.puestoService = puestoService;
+  }
+
+  $onInit(){
+    this.puestoService.query().$promise
+    .then(response => {
+      console.log('Puestos', response);
+      this.tipoPuesto = response;
+    })
+    .catch(err => {
+      console.log('Error', err);
+    })
   }
 
   createVehiculo(){
